@@ -1,0 +1,109 @@
+java TicTacToe User Manual And Game Play Demo
+Playing the Game:
+
+The game will display the current state of the board, which initially looks like this:
+Current board:
+      |   |  
+-------------
+      |   |  
+-------------
+      |   |  
+
+
+The players will take turns entering their moves. Each player will be prompted to enter the row and column where they want to place their mark ('X' or 'O').
+The rows and columns are zero-indexed, meaning:
+
+•	Row 0, Column 0 is the top-left corner.
+•	Row 0, Column 1 is the top-middle.
+•	Row 0, Column 2 is the top-right corner.
+•	Row 1, Column 0 is the middle-left.
+•	Row 1, Column 1 is the center.
+•	Row 1, Column 2 is the middle-right.
+•	Row 2, Column 0 is the bottom-left.
+•	Row 2, Column 1 is the bottom-middle.
+•	Row 2, Column 2 is the bottom-right.
+
+For example, if player 'X' wants to place their mark in the center of the board, they would enter:
+1 
+1
+
+If a player tries to place a mark in an already occupied space or outside the valid range (0-2), they will receive a message indicating that the move is invalid, and they will be prompted to enter their move again.
+
+Winning the Game:
+
+The game will automatically check for a win after each move. If a player wins, the game will display a message like:
+Player X wins!
+
+If the board is full and no player has won, the game will display:
+
+The game is a draw!
+
+End of the Game:
+After a win or a draw, the game will end. You can re-run the program to play again.
+Example Game Play
+
+
+
+Here's an example of how a game might proceed:
+Current board:
+
+     |   |  
+-------------
+     |   |  
+-------------
+     |   |  
+
+
+Player X enters 0 0 (top-left):
+
+Current board:
+
+ X   |   |  
+-------------
+     |   |  
+-------------
+     |   |  
+
+Player O enters 1 1 (center):
+Current board:
+
+ X   |   |  
+-------------
+     | O |  
+-------------
+     |   |  
+
+
+Player X enters 0 1 (top-middle):
+Current board:
+
+ X  | X |  
+-------------
+    | O |  
+-------------
+    |   | 
+
+
+Player O enters 2 2 (bottom-right):
+Current board:
+
+ X  | X |  
+-------------
+    | O |  
+-------------
+    |   |  O
+
+
+Player X enters 0 2 (top-right):
+Current board:
+
+ X  | X | X
+-------------
+    | O |  
+-------------
+    |   |  O
+
+
+
+Player X wins:
+Player X wins!
